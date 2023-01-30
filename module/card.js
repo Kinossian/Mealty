@@ -20,7 +20,7 @@ const Card = ({ meal }) => {
                 onClick={detail}
                 className="relative w-96 h-96 flex flex-col justify-between rounded select-none shadow-2xl cursor-pointer"
             >
-                <img className="absolute w-full h-full rounded-lg object-cover" src={meal.strMealThumb} alt="" />
+                <img className="absolute w-full h-full rounded-lg object-cover" src={meal.strMealThumb} alt={meal.strMeal} />
                 <div className="absolute h-full w-full ">
                     <AiFillHeart
                         onClick={liked}

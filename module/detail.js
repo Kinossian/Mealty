@@ -26,7 +26,7 @@ const Detail = ({ setIsDetail, meal }) => {
                 onClick={() => setIsDetail(false)}
                 className='fixed flex flex-col lg:flex-row z-50 top-16 h-5/6 w-5/6 bg-teal-50 rounded-lg overflow-scroll cursor-pointer'
             >
-                <img className="rounded-lg shadow-2xl h-1/3  lg:w-1/2 lg:h-auto m-5  object-cover" src={meal.strMealThumb} alt="" />
+                <img className="rounded-lg shadow-2xl h-1/3  lg:w-1/2 lg:h-auto m-5  object-cover" src={meal.strMealThumb} alt={meal.strMeal} />
                 <div className='p-1 lg:mt-10 lg:w-1/2'>
                     <div className='w-11/12 flex flex-wrap items-baseline justify-evenly'>
                         <h2 className='text-5xl text-teal-600 font-extrabold'>{meal.strMeal}</h2>
